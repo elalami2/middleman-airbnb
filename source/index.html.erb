@@ -38,6 +38,9 @@ title: Le Wagon - Middleman
               <% for c in 1..flat.rating %>
               <i class="fas fa-star" style ="color:yellow"></i>
               <% end %>
+                <% for c in (flat.rating+1)..5 %>
+                <i class="fas fa-star" style ="color:white"></i>
+                <% end %>
             </ul>
           </div>
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
